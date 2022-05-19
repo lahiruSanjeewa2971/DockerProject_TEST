@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: order-management
+spec:
+  selector:
+    matchLabels:
+      app: order-management
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: order-management
+    spec:
+      containers:
+        - name: order-management
+          image: lahirusanjeewa2971/order_management
+          ports:
+            - containerPort: 5001
