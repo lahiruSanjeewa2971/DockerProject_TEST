@@ -13,7 +13,7 @@ spec:
         app: order-management
     spec:
       containers:
-        - name: order-management
+        - name: order_management
           image: lahirusanjeewa2971/order_management
           ports:
             - containerPort: 5001
